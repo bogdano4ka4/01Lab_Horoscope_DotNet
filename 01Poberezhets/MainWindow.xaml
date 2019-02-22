@@ -1,0 +1,24 @@
+﻿<Window x:Class="_01Poberezhets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01Poberezhets"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="White">
+    <Grid IsEnabled="{Binding IsControlEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+        <local:BirthdayControl></local:BirthdayControl>
+        <fa:ImageAwesome Icon="Refresh" Width="50" Height="50" Spin="True" Visibility="{Binding LoaderVisibility, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></fa:ImageAwesome>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <DatePicker Name="Date_Picker" Width="200" Height="50" HorizontalAlignment="Left" Margin="212.2,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.186,0.262" Grid.Column="2"/>
+        <Button Name="Button_ok" Content="Button" HorizontalAlignment="Left" Margin="85.6,103,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <TextBlock Name="text_Show"  Margin="52.6,213,32.6,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBlock Name="Zodiak_Show"  Margin="52.6,259,32.6,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBlock Name="China_Show" HorizontalAlignment="Left" Height="23" Margin="10.2,345,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>-->
+    </Grid>
+</Window>
